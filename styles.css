@@ -3,13 +3,18 @@
   padding: 0;
   border: none;
 }
+body {
+  width: 100%;
+  height: 100%;
+}
 #sidebar {
+  position: sticky;
+  top: 0;
   display: inline-block;
-  outline: 1px solid red;
-  background-color: #CCCCCC;
+  background-color: #888888;
   width: 10%;
   height: 100%;
-  padding: 2% 0 2% 3%;
+  padding: 3% 0 3% 3%;
   font-size: 1.5rem;
 }
 #sidebar ul li {
@@ -22,8 +27,48 @@
 main {
   display: inline-block;
   width: 87%;
-  background-color: pink;
+  background-color: #fdcbd4;
   height: 100%;
   vertical-align: top;
   text-align: center;
+  line-height: 30px;
+}
+main h1 {
+  font-size: 4rem;
+  padding: 4% 0;
+}
+main ul li {
+  border-bottom: 1px solid black;
+  text-align: center;
+  list-style: none;
+  margin: 50px 300px;
+}
+main ul li h2 {
+  font-size: 2rem;
+  margin: 4% 0;
+  font-size: 3rem;
+}
+main ul li button {
+  margin: 2% 0 2% 0;
+  padding: 1% 3%;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #696969;
+}
+main ul li img {
+  display: block;
+  text-align: center;
+  margin: 0 0 3% 45%;
+}
+main ul li p {
+  font-size: 1.5rem;
+}
+main ul li input {
+  height: 15%;
+  width: 15%;
+  font-size: 1.5rem;
+  padding: 0.85%;
+}
+.addClass {
+  font-size: 5rem;
 }

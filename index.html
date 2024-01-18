@@ -10,29 +10,91 @@
         <script>
              $(document).ready(function(){
                 $('#clickMe').click(function(){
-                    alert('twas here')
+                    alert('Event has Been Triggered')
                 });
+
+                $('#hideMe').click(function(){
+                    $('.hideAndShow').hide();
+                });
+
+                $('#showMe').click(function(){
+                    $('.hideAndShow').show();
+                });
+
+                $('#toggleMe').click(function(){
+                    $('#toggle').toggle();
+                });
+                
+                $('#slideMeUp').click(function(){
+                    $('.slideUpAndDown').slideUp();
+                });
+
+                $('#slideMeDown').click(function(){
+                    $('.slideUpAndDown').slideDown();
+                });
+
+                $('#slideToggleMe').click(function(){
+                    $('#slideToggle').slideToggle();
+                });
+
+                $('#fadeMeIn').click(function(){
+                    $('.fadeInAndOut').fadeIn();
+                });
+
+                $('#fadeMeOut').click(function(){
+                    $('.fadeInAndOut').fadeOut();
+                });
+
+                $('#addClasses').click(function(){
+                    $('#addClass').addClass('addClass');
+                });
+                
+                $('#beforeMe').click(function(){
+                    $('#before').before('Surprise');
+                });
+
+                $('#afterMe').click(function(){
+                    $('#after').after('Surprise Again');
+                });
+
+                $('#html-2').click(function(){
+                    $('#html').html('<i>Bonjour!</i>');
+                });
+
+                $('#addAttr').click(function(){
+                    $("img").attr("width","500");
+                });
+
+                $('#addVal').click(function(){
+                    $('#val').val("green");
+                });
+
+                $('#addText').click(function(){
+                    $('#text').text("Potato");
+                });
+
+
             });
         </script>
     </head>
     <body>
         <div id="sidebar">
             <ul>
-                <li><a href="#">.click()</a></li>
-                <li><a href="#">.hide()</a></li>
-                <li><a href="#">.show()</a></li>
-                <li><a href="#">.toggle()</a></li>
-                <li><a href="#">.slideDown()</a></li>
-                <li><a href="#">.slideUp()</a></li>
-                <li><a href="#">.slideToggle()</a></li>
-                <li><a href="#">.fadeIn()</a></li>
-                <li><a href="#">.fadeOut()</a></li>
-                <li><a href="#">.addClass()</a></li>
-                <li><a href="#">.before()</a></li>
-                <li><a href="#">.after()</a></li>
-                <li><a href="#">.html()</a></li>
-                <li><a href="#">.attr()</a></li>
-                <li><a href="#">.val()</a></li>
+                <li><a href="#click">.click()</a></li>
+                <li><a href="#hide">.hide()</a></li>
+                <li><a href="#show">.show()</a></li>
+                <li><a href="#toggle">.toggle()</a></li>
+                <li><a href="#slideUp">.slideDown()</a></li>
+                <li><a href="#slideDown">.slideUp()</a></li>
+                <li><a href="#slideToggle">.slideToggle()</a></li>
+                <li><a href="#fadeIn">.fadeIn()</a></li>
+                <li><a href="#fadeOut">.fadeOut()</a></li>
+                <li><a href="#addClass">.addClass()</a></li>
+                <li><a href="#before">.before()</a></li>
+                <li><a href="#after">.after()</a></li>
+                <li><a href="#html">.html()</a></li>
+                <li><a href="#attr">.attr()</a></li>
+                <li><a href="#val">.val()</a></li>
                 <li><a href="#">.text()</a></li>
             </ul>
         </div><!--
@@ -40,11 +102,87 @@
             <h1>Mini Documentation</h1>
             <ul>
                 <li>
-                    <div>
-                        <h2 id="click">.click()</h2>
-                        <p>Bind an event handler to the "click" event or trigger that event on an element</p>
-                        <button id="clickMe">Click Me</button>
-                    </div>
+                    <h2 id="click">.click()</h2>
+                    <p>Bind an event handler to the "click" event or trigger that eventon an element. Example: An alert would pop up that an event has been triggered. </p>
+                    <button id="clickMe">Click Me</button>
+                </li>
+                <li>
+                    <h2 class="hideAndShow" id="hide">.hide()</h2>
+                    <p>Hide the matched elements. Example: Hiding the H2 Element</p>
+                    <button id="hideMe">Click Me</button>
+                </li>
+                <li>
+                    <h2 class="hideAndShow" id="show">.show()</h2>
+                    <p>Display the matched elements. Example: Showing the H2 Element that was hidden before.</p>
+                    <button id="showMe">Click Me</button>
+                </li>
+                <li>
+                    <h2 id="toggle">.toggle()</h2>
+                    <p>Display or hide the matched elements. Example: Toggling H2 as being shown or hidden</p>
+                    <button id="toggleMe">Click Me</button>
+                </li>
+                <li>
+                    <h2 class="slideUpAndDown" id="slideUp">.slideUp()</h2>
+                    <p>Hide the matched elements with a sliding motion. Example: hiding the H2 Element while sliding up</p>
+                    <button id="slideMeUp">Click Me</button>
+                </li>
+                <li>
+                    <h2 class="slideUpAndDown" id="slideDown">.slideDown()</h2>
+                    <p>Display the matched elements with a sliding motion. Example: showing the H2 Element while sliding down</p>
+                    <button id="slideMeDown">Click Me</button>
+                </li>
+                <li>
+                    <h2 id="slideToggle">.slideToggle()</h2>
+                    <p>Display or hide the matched elements with a sliding motion. Example hiding or showing the H2 Element with a sliding motion</p>
+                    <button id="slideToggleMe">Click Me</button>
+                </li>
+                <li>
+                    <h2 class="fadeInAndOut" id="fadeOut">.fadeOut()</h2>
+                    <p>Hide the matched elements by fading them to transparent. Example: Hiding the H2 Element by making it transparent</p>
+                    <button id="fadeMeOut">Click Me</button>
+                </li>
+                <li>
+                    <h2 class="fadeInAndOut" id="fadeIn">.fadeIn()</h2>
+                    <p>Display the matched elements by fading them to opaque. Example: Showing the H2 Element by making it opaque</p>
+                    <button id="fadeMeIn">Click Me</button>
+                </li>
+                <li>
+                    <h2 id="addClass">.addClass()</h2>
+                    <p>Adds the speicified class(es) to each element in the set of matched elements. Example: adding a CSS class in the H2 element</p>
+                    <button id="addClasses">Click Me</button>
+                </li>
+                <li>
+                    <h2 id="before">.before()</h2>
+                    <p>Insert content, specified by the parameter, before each element in the set matched elements. Example: Adding a text before H2.</p>
+                    <button id="beforeMe">Click Me</button>
+                </li>
+                <li>
+                    <h2 id="after">.after()</h2>
+                    <p>Insert content, specified by the parameter, after each element in the set of matched elements. Example: Adding a text after H2</p>
+                    <button id="afterMe">Click Me</button>
+                </li>
+                <li>
+                    <h2 id="html">.html()</h2>
+                    <p>Get the HTML contents of the first element in the set of matched elements or the set HTML contents of every matched element. Example: adding a text with HTML elements to the H2 element</p>
+                    <button id="html-2">Click Me</button>
+                </li>
+                <li>
+                    <h2 id="attr">.attr()</h2>
+                    <img src="" alt="">
+                    <p>Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element. Example: Changing the attribute of the image below</p>
+                    <button id="addAttr">Click Me</button>
+                    <img src="img/cat.jpg" alt="cat" width="100" height="60">
+                </li>
+                <li>
+                    <h2>.val()</h2>
+                    <p>Get the current value of the first element in the set of matched elements or the set value of every matched element. Example: Adding value inside an input</p>
+                    <input type="text" id="val" value="Something">
+                    <button id="addVal">Click Me</button>
+                </li>
+                <li>
+                    <h2 id="text">.text()</h2>
+                    <p>Get the combined text contents of element in the set of matched elements, including their descendants, or set the text contents of the matched elements. Example: Changing the text of the H2 Element</p>
+                    <button id="addText">Click Me</button>
                 </li>
             </ul>
         </main>
