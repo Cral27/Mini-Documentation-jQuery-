@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+#sidebar {
+  display: inline-block;
+  outline: 1px solid red;
+  background-color: #CCCCCC;
+  width: 10%;
+  height: 100%;
+  padding: 2% 0 2% 3%;
+  font-size: 1.5rem;
+}
+#sidebar ul li {
+  list-style: none;
+  margin: 12% 0;
+}
+#sidebar ul li a {
+  color: #0303ff;
+}
+main {
+  display: inline-block;
+  width: 87%;
+  background-color: pink;
+  height: 100%;
+  vertical-align: top;
+  text-align: center;
+}

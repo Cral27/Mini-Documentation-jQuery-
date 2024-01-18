@@ -1,0 +1,41 @@
+@header-bg:#06568E;
+@sidebar-bg:#CCCCCC;
+@main-bg:#0769AD;
+@text-1: rgb(3, 3, 255);
+@text-2: rgb(34, 34, 34);
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#sidebar{
+    display: inline-block;
+    outline: 1px solid red;
+    background-color: @sidebar-bg;
+    width: 10%;
+    height: 100%;
+    padding:2% 0 2% 3%;
+    font-size: 1.5rem;
+    ul{
+        li{
+            list-style: none;
+            margin: 12% 0;
+            a{
+                color: @text-1;
+            }
+        }
+    }
+}
+
+main{
+    display: inline-block;
+    width: 87%;
+    background-color: pink;
+    height: 100%;
+    vertical-align: top;
+    text-align: center;
+
+
+}

@@ -4,31 +4,49 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mini Documentation</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <link rel="stylesheet/less" type="text/css" href="style.less" />
+        <link rel="stylesheet/less" type="text/css" href="styles.less" />
         <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+             $(document).ready(function(){
+                $('#clickMe').click(function(){
+                    alert('twas here')
+                });
+            });
+        </script>
     </head>
     <body>
         <div id="sidebar">
             <ul>
-                <li>.click()</li>
-                <li>.hide()</li>
-                <li>.show()</li>
-                <li>.toggle()</li>
-                <li>.slideDown()</li>
-                <li>.slideUp()</li>
-                <li>.slideToggle()</li>
-                <li>.fadeIn()</li>
-                <li>.fadeOut()</li>
-                <li>.addClass()</li>
-                <li>.before()</li>
-                <li>.after()</li>
-                <li>.html()</li>
-                <li>.attr()</li>
-                <li>.val()</li>
-                <li>.text()</li>
+                <li><a href="#">.click()</a></li>
+                <li><a href="#">.hide()</a></li>
+                <li><a href="#">.show()</a></li>
+                <li><a href="#">.toggle()</a></li>
+                <li><a href="#">.slideDown()</a></li>
+                <li><a href="#">.slideUp()</a></li>
+                <li><a href="#">.slideToggle()</a></li>
+                <li><a href="#">.fadeIn()</a></li>
+                <li><a href="#">.fadeOut()</a></li>
+                <li><a href="#">.addClass()</a></li>
+                <li><a href="#">.before()</a></li>
+                <li><a href="#">.after()</a></li>
+                <li><a href="#">.html()</a></li>
+                <li><a href="#">.attr()</a></li>
+                <li><a href="#">.val()</a></li>
+                <li><a href="#">.text()</a></li>
             </ul>
-        </div>
+        </div><!--
+        --><main>
+            <h1>Mini Documentation</h1>
+            <ul>
+                <li>
+                    <div>
+                        <h2 id="click">.click()</h2>
+                        <p>Bind an event handler to the "click" event or trigger that event on an element</p>
+                        <button id="clickMe">Click Me</button>
+                    </div>
+                </li>
+            </ul>
+        </main>
     </body>
 </html>
